@@ -42,7 +42,7 @@ public abstract class CassandraConfig extends AbstractCassandraConfiguration {
   }
 }
 ```
-If you did view my [previous post](https://lankydanblog.com/2017/10/12/getting-started-with-spring-data-cassandra/) this class might look familiar. This was originally the main configuration class for a application that was designed to work for a single keyspace. To make the application suitable for multiple keyspaces I turned it into an abstract class and removed the `@Configuration` and '@EnableCassandraRepositories` annotations. It is then extended by other configuration classes which provide alterations to a few beans to allow them to point to their chosen keyspace. It is worth mentioning that `getEntityBasePackages` is defined here so that all entities can be defined in a single place where they can be used from whatever keyspaces are defined.
+If you did view my [previous post](https://lankydanblog.com/2017/10/12/getting-started-with-spring-data-cassandra/) this class might look familiar. This was originally the main configuration class for a application that was designed to work for a single keyspace. To make the application suitable for multiple keyspaces I turned it into an abstract class and removed the `@Configuration` and `@EnableCassandraRepositories` annotations. It is then extended by other configuration classes which provide alterations to a few beans to allow them to point to their chosen keyspace. It is worth mentioning that `getEntityBasePackages` is defined here so that all entities can be defined in a single place where they can be used from whatever keyspaces are defined.
 ```java
 @Configuration
 @EnableCassandraRepositories
