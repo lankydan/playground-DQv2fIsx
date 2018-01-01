@@ -1,6 +1,6 @@
-title: Spring 5 Project
+title: Multiple keyspaces with Spring Data Cassandra
 plan:
-- title: Welcome
+- title: Multiple keyspaces with Spring Data Cassandra
   statement: markdowns/welcome.md
 projects:
   java:
