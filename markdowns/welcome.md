@@ -111,3 +111,7 @@ This allows the keyspaces to diverge in functionality if required but keeps any 
 Now when each repository is used their queries will be directed towards the correct keyspaces.
 
 That brings us to the end of this shorter post. We looked at how to configure the Spring Data Cassandra repositories to allow multiple keyspaces to be used and briefly touched on why you might want to use more keyspaces within your application. The method used in this post revolved around creating a new session and template for each keyspace which can be set up without to much extra configuration when compared to using a singular keyspace.
+
+The code used in this post can be found on my [GitHub](https://github.com/lankydan/spring-data-cassandra/tree/multiple_key_spaces).
+
+If you found this post helpful, the original post and others can be found on my blog, [www.lankydanblog.com](https://lankydanblog.com)
